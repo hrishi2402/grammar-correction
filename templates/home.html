@@ -100,13 +100,13 @@
                     <div class="col-md-6 form-line">
                         <div class="form-group">
                             <textarea class="form-control" id="original" name="text" 
-                            placeholder="Enter Your Text" required>{{output.original}}</textarea>
+                            placeholder="Enter Your Text" required>{% if output.original %}{{output.original}}{% endif %}</textarea>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <textarea class="form-control" id="corrected"
-                                placeholder="Corrected text will be here">{{output.output}}</textarea>
+                                placeholder="Corrected text will be here">{% if output.output %}{{output.output}}{% endif %}</textarea>
                         </div>
                         <div>
                             <button type="submit" class="btn btn-default submit" form="form1">

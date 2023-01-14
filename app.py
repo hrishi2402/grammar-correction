@@ -6,7 +6,6 @@ app = Flask(__name__)
 @app.route("/",methods=['GET', 'POST'])
 def hello_world():
     if request.method == "GET":
-        print(request)
         return render_template('home.html')
     elif request.method == "POST":
         try:
