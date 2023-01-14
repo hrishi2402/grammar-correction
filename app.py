@@ -6,7 +6,8 @@ app = Flask(__name__)
 @app.route("/",methods=['GET', 'POST'])
 def hello_world():
     if request.method == "GET":
-        return render_template('home.html')
+        output = None
+        return render_template('home.html',output=output)
     elif request.method == "POST":
         try:
             text = request.form.get('text')        
