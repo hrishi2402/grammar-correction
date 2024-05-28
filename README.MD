@@ -1,5 +1,6 @@
 Grammar Correction ML in flask
 
-Technologies used: Python - Flask 
+Technologies used:
 
-Html css js
+Backend Python - Flask
+
